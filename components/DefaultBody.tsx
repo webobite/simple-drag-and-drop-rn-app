@@ -4,7 +4,7 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 
 // @todo: Add Grid Generator in body part
 
-function DefaultBody() {
+function DefaultBody(props: any) {
     return (
         <View style={DefaultBodyStyle.container}>
             <Text>DefaultBody</Text>

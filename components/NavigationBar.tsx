@@ -5,6 +5,8 @@ import { Col, Row, Grid } from "react-native-easy-grid";
 // @todo : Add Navigation Bar generic Component
 
 function NavigationBar(props: any) {
+    console.log("Props in NavigationBar : : :: ", props);
+    
     return (
         <View style={NavigationBarStyle.container}>
             <Text>NavigationBar</Text>

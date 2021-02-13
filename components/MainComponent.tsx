@@ -1,24 +1,20 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Col, Row, Grid } from "react-native-easy-grid";
-import HeaderBar from './HeaderBar';
 import NavigationBar from './NavigationBar';
 import DefaultBody from './DefaultBody';
 
-function MainComponent(props: any) {
+function MainComponent(props: any) {    
     return (
         <Grid>
-            <Row size={10}>
-                <HeaderBar />
-            </Row>
             <Row size={90} style={{
                 borderWidth: 5
             }}>
                 <Col size={15}>
-                    <NavigationBar />
+                    <NavigationBar props={props.navigation} />
                 </Col>
                 <Col size={85}>
-                    <DefaultBody />
+                    <DefaultBody props={props.navigation} />
                 </Col>
             </Row>
         </Grid>
